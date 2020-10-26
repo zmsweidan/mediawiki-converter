@@ -1,4 +1,4 @@
-import os
+from pathlib import Path
 from dicttoxml import dicttoxml
 import xmlschema
 
@@ -6,9 +6,8 @@ class Utility:
 
     def write_file(self, file_name='doc', file_type='txt', contents='', write_option='w', xsd_schema=None):
 
-        # "x" - Create a file only if it does not exist
-        # "a" - Append to an existing file, or create a file if it does not exist
-        # "w" - Write to an existing file, or create a file if it does not exist
+        Path('../exports').mkdir(parents=True, exist_ok=True)
+
         FULL_FILE_NAME = f'{file_name}.{file_type}'
         f = open(f'../exports/{FULL_FILE_NAME}', write_option)
         f.write(contents)
@@ -21,7 +20,8 @@ class Utility:
 
     def convert_to_xml(self, doc, is_string=True):
         xml_doc = dicttoxml(doc, custom_root='root', attr_type=False)
-        xml_str = xml_doc.decode("utf-8") #.replace('\n', '<br />')
+        xml_str = xml_doc.decode("utf-8")
+        # xml_str = xml_str.replace('\n', '<br />')
         return xml_str if is_string else xml_doc
 
     def xsd_check(self, xsd_file, xml_file):
