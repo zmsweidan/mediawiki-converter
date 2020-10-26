@@ -1,0 +1,18 @@
+= Section X =
+This is a test.
+:indent once
+::indent twice
+:::indent thrice
+* Bullet point 1
+** Bullet point 2
+*** Bullet point 3
+# item 1
+# item 2
+# item 3
+##item 3-1
+
+== Section 1.1 ==
+<div class="center" style="width: auto; margin-left: auto; margin-right: auto;">This text is centred
+test 12345
+:'''test 6789'''
+</div>

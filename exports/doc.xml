@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?><root><title>New Document</title><author>None</author><sections><item>= Section X =
+This is a test.
+:indent once
+::indent twice
+:::indent thrice
+* Bullet point 1
+** Bullet point 2
+*** Bullet point 3
+# item 1
+# item 2
+# item 3
+##item 3-1
+</item><item>== Section 1.1 ==
+&lt;div class=&quot;center&quot; style=&quot;width: auto; margin-left: auto; margin-right: auto;&quot;&gt;This text is centred
+test 12345
+:&apos;&apos;&apos;test 6789&apos;&apos;&apos;
+&lt;/div&gt;</item></sections></root>
